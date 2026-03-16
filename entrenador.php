@@ -4,6 +4,8 @@ class entrenador {
     /** @var Pokemon[] */
     private array $equipo = [];
 
+    private bool $activo;
+
     public function __construct($nombre) {
         $this->nombre = $nombre;
     }
