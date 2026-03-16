@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'pokemon.php';
+include_once "nav.php";
 
 if (!isset($_SESSION['pokemons'])) {
     $_SESSION['pokemons'] = [];
@@ -30,13 +31,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Crear nuevo Pokémon</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<div class="card">
+<section class="contenedor">
     <h2>Crear nuevo Pokémon</h2>
+    <section class="mensaje">
     <?php if ($mensaje): ?>
         <p><strong><?= $mensaje ?></strong></p>
     <?php endif; ?>
+    </section>
     <form method="post">
         <label>Nombre*</label>
         <input type="text" name="nombre" required><br>
@@ -64,8 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         <button type="submit">Crear Pokémon</button>
     </form>
-    <a href="logica.php">Volver a la lógica</a>
-</div>
+</section>
 </body>
 </html>
 
