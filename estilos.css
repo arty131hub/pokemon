@@ -6,8 +6,6 @@
 }
 
 body {
-
-    background-image: url('');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -108,4 +106,12 @@ footer {
     bottom: 0;
     left: 0;
     font-weight: bold;
+}
+.fondo-entrenadora {
+    /* Si tu foto se llama "ash.jpg" y está en la misma carpeta, pon url('ash.jpg') */
+    background-image: url('entrenado.jpg');
+}
+
+.fondo-pokemon {
+    background-image: url('pokeball.jpg');
 }
