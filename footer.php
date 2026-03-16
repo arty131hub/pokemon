@@ -1,3 +1,3 @@
 <footer>
-    SPRINT DE POKEMON P1.
+    Ejercicios de la prueba semanal GUILLERMO ANGÁS.
 </footer>
