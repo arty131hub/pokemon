@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    text-align: center;
+    font-size: large;
+}
+nav a{
+    background-color: rgb(249, 252, 255);
+    text-decoration: none;
+    color: blue;
+}
+.contenedor{
+    background-color: rgb(215, 234, 250);
+    width: 60%;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+}
+.mensaje{
+    color: green;
+}
+footer{
+    background-color: rgb(215, 234, 250);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
