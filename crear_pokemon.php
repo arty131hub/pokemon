@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'pokemon.php';
+require_once 'clases/pokemon.php';
 include_once "nav.php";
 
 if (!isset($_SESSION['pokemons'])) {
@@ -69,6 +69,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Crear Pokémon</button>
     </form>
 </section>
+<?php include_once "footer.php"; ?>
 </body>
 </html>
 

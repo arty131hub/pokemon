@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once 'entrenador.php';
+require_once 'clases/entrenador.php';
 include_once "nav.php";
 
 if (!isset($_SESSION['entrenadoras'])) {
@@ -41,6 +41,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <button type="submit">Crear entrenadora</button>
     </form>
 </section>
-<?php   ?>
+<?php include_once "footer.php";  ?>
 </body>
 </html>
