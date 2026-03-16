@@ -22,6 +22,13 @@ class pokemon {
         return "{$this->nombre} ataca a {$objetivo->nombre} y le causa {$daño} puntos de daño.";
     }
 
+    private function recibirDanio(int $cantidad): void {
+        $this->vida -= $cantidad;
+        if ($this->vida < 0) {
+            $this->vida = 0;
+        }
+    }
+
     public function evolucionar(): string {
         $this->nivel += 1;
         $this->vida += 20;

@@ -12,12 +12,11 @@ class entrenador {
         $this->equipo[] = $pokemon;
     }
 
-    public function mostrarEquipo(): string {
-        if (empty($this->equipo)) {
-            return "{$this->nombre} no tiene Pokémons en su equipo.";
-        }
-        $texto = "Entrenadora: {$this->nombre}<br>Equipo Pokémon:<br>";
-        foreach ($this->equipo as $i) {
+    public function mostrarEquipo() {
+        $texto = "Entrenador/a: " . $this->nombre . "<br>Equipo Pokémon:<br>";
+
+        foreach ($this->equipo as $pokemon) {
+            $texto = $texto . "- " . $pokemon->getNombre() . "<br>";
         }
         return $texto;
     }

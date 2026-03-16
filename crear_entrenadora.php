@@ -1,6 +1,7 @@
 <?php
 session_start();
 require_once 'entrenador.php';
+include_once "nav.php";
 
 if (!isset($_SESSION['entrenadoras'])) {
     $_SESSION['entrenadoras'] = [];
@@ -24,19 +25,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Crear nueva entrenadora</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<div class="card">
+<section class="contenedor">
     <h2>Crear nueva entrenadora</h2>
+    <section class="mensaje">
     <?php if ($mensaje): ?>
         <p><strong><?= $mensaje ?></strong></p>
     <?php endif; ?>
+    </section>
     <form method="post">
         <label>Nombre de la entrenadora</label>
         <input type="text" name="nombre" required>
         <button type="submit">Crear entrenadora</button>
     </form>
-    <a href="logica.php">Volver a la lógica</a>
-</div>
+</section>
+<?php   ?>
 </body>
 </html>
