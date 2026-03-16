@@ -27,7 +27,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Crear nueva entrenadora</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="fondo-entrenadora">
 <section class="contenedor">
     <h2>Crear nueva entrenadora</h2>
     <section class="mensaje">

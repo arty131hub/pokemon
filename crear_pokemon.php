@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Crear nuevo Pokémon</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
+<body class="fondo-pokemon">
 <section class="contenedor">
     <h2>Crear nuevo Pokémon</h2>
     <section class="mensaje">
